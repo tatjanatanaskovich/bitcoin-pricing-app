@@ -1086,38 +1086,38 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const Index = props => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 6
   },
   __self: undefined
 }, __jsx("div", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
+    lineNumber: 7
   },
   __self: undefined
 }, __jsx("h1", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
+    lineNumber: 8
   },
   __self: undefined
 }, "Welcome to Bitcoin Pricing App"), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 9
   },
   __self: undefined
 }, "Check current Bitcoin rate"), __jsx(_components_Prices__WEBPACK_IMPORTED_MODULE_3__["default"], {
   bpi: props.bpi,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
+    lineNumber: 10
   },
   __self: undefined
 })));
 
 Index.getInitialProps = async function () {
-  const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()('https://api.coindesk.com/v1/bpi/currentprice.json');
   const data = await res.json();
   return {
     bpi: data.bpi

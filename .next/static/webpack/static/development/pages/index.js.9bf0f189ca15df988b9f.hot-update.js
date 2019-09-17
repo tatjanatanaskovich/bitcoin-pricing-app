@@ -31,32 +31,32 @@ var Index = function Index(props) {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }, "Welcome to Bitcoin Pricing App"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, "Check current Bitcoin rate"), __jsx(_components_Prices__WEBPACK_IMPORTED_MODULE_5__["default"], {
     bpi: props.bpi,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   })));
@@ -73,7 +73,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
+          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('https://api.coindesk.com/v1/bpi/currentprice.json');
 
         case 2:
           res = _context.sent;
@@ -98,4 +98,4 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 /***/ })
 
 })
-//# sourceMappingURL=index.js.fff60b37a0b9ff4f3bac.hot-update.js.map
+//# sourceMappingURL=index.js.9bf0f189ca15df988b9f.hot-update.js.map
